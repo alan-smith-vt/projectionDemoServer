@@ -1,30 +1,19 @@
-Requirements (names might not be exact)
+See https://github.com/alan-smith-vt/projectionDemoProject for full instructions.
 
-tqdm
+For the server specifically:
 
-matplotlib
+Clone this github.
 
-sklearn
+Install Python 3.6 (We used 3.6.8, but shouldn't need to be exact)
+Install the requirements (cmd from within the server folder): "pip install -r requirements.txt"
 
-cv2
+Update lines 141-149 with your IP addresses for the computer running the server and the Hololens itself if deploying to the Hololens.
+Change the "editor" boolean on line 141 to True if running the main project in the unity editor, or False if deploying to the Hololens.
 
-Pillow
+Comment out line 78 if deploying to the Hololens. Leave uncommented if running in the unity editor.
 
-pandas
+To start the server:
 
-shutil
-
-Python 3.6 (I'm using 3.6.8)
-
-Pytorch 1.4.0 and associated torchvision from provided wheel (this is the most finicky part, just use the wheel)\n
-
-And last, download the "crackDetectionExample" folder and move the "concrete_crack_detection-main"
-folder in the main folder with the server.py file
-
-You can ignore the jpeg and the example python file included with the crackDetectionExample folder
-
-Torch download:
-https://virginiatech-my.sharepoint.com/:u:/g/personal/salan1_vt_edu/Ef8gQcnK7t1HhmmSL8lOtIUBunt3Nj9RLTbOJahJrKqG2Q?e=CPdlc3
-
-crackDetectionExample zip
-https://virginiatech-my.sharepoint.com/:u:/r/personal/salan1_vt_edu/Documents/Attachments/crackDetectionExample.zip?csf=1&web=1&e=9cdjiH
+Open the command prompt within the server folder
+Launch the "server.py" file however you normally launch python files 
+(in our environment it is "python36 server.py", but this will vary based on your python environmental variables)

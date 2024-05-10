@@ -54,9 +54,9 @@ class Handler(BaseHTTPRequestHandler):
             timenow = datetime.utcnow().strftime('%Y-%m-%d_%H-%M-%S-%f')[:-3]
 
             fileName = "matrix_stats/Stats" + str(timenow) + ".txt"
-            raw_data_file = open(fileName, "wb+")
-            raw_data_file.write(data)
-            raw_data_file.close()
+            stats_data_file = open(fileName, "wb+")
+            stats_data_file.write(data)
+            stats_data_file.close()
 
             print('Stats data written to: ' + fileName + '\n\n')
 
