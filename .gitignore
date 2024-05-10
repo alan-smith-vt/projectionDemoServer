@@ -1,0 +1,11 @@
+#Ignore stuff
+concrete_crack_detection-main/
+.vs/
+__pycache__
+
+torch-1.4.0-cp36-cp36m-win_amd64.whl
+
+data/rawPhotos/*.jpg
+data/debugging/*.jpg
+
+
