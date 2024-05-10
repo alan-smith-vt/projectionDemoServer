@@ -75,7 +75,7 @@ class Handler(BaseHTTPRequestHandler):
             img = cv2.imdecode(np.frombuffer(data, dtype='uint8'), 1)
 
             #Debugging
-            img = cv2.imread('PXL_20240328_182819987.jpg')
+            #img = cv2.imread('PXL_20240328_182819987.jpg')
 
             cv2.imwrite("blobImage.jpg",img)
 
@@ -138,7 +138,7 @@ def displayImage(img):
     time.sleep(1)
     cv2.destroyAllWindows()
 
-editor = True
+editor = False
 
 if editor:
     HOST = '192.168.4.21'#Desktop
@@ -146,7 +146,7 @@ if editor:
 
 else:
     HOST = '192.168.4.21'#Desktop
-    hl2_ip = '192.168.1.2'#HoloLens
+    hl2_ip = '192.168.4.30'#HoloLens
 
 
 
